@@ -1,0 +1,61 @@
+<html>
+
+<header>
+    <title>
+        da BAT controlla
+    </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <div class="backgroundContainer">
+        <p style="font-size: 12rem; line-height:0"> Control </p>
+        <p style="font-size: 10rem; line-height:0"> da </p>
+        <p style="font-size: 20rem; line-height:0"> BAT </p>
+    </div>
+</header>
+
+<body>
+    <table id="colorTimeline" style="display: inline-block;">
+        <thead>
+            <tr>
+                <td>
+                    Time
+                </td>
+                <td>
+                    Top Wings
+                </td>
+                <td>
+                    Bottom Wings
+                </td>
+                <td>
+                    Body
+                </td>
+                <td>
+                    <input type="button" onclick="upload(this)" value="Upload">
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="colorRow">
+                <td class="rowNumber">1</td>
+                <td>
+                    <input type="color" onchange="colorPickerChange(this)" id="BatWingsTop">
+                </td>
+                <td>
+                    <input type="color" onchange="colorPickerChange(this)" id="BatWingsBottom">
+                </td>
+                <td>
+                    <input type="color" onchange="colorPickerChange(this)" id="BatBody">
+                </td>
+                <td>
+                    <input type="button" onclick="insertRowBelow(this)" value="Insert Below">
+                </td>
+                <td>
+                    <input type="button" onclick="deleteThisRow(this)" value="Delete Row">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
